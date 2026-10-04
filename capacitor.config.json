@@ -1,0 +1,29 @@
+{
+  "appId": "com.krsa.portal",
+  "appName": "KRS Portal",
+  "webDir": "www",
+  "server": {
+    "url": "https://krs-student-portal.web.app",
+    "androidScheme": "https",
+    "cleartext": false,
+    "errorPath": "offline.html",
+    "allowNavigation": ["krs-student-portal.web.app", "*.firebaseapp.com", "*.googleapis.com"]
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#2f8fdf",
+      "overlaysWebView": false
+    },
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#ffffff",
+      "androidScaleType": "CENTER_INSIDE",
+      "showSpinner": false
+    }
+  }
+}
