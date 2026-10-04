@@ -1,1 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KRS Portal</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(180deg,#e8f3fd,#f4f9fe);color:#256a9c;font-family:system-ui,sans-serif;text-align:center}
+.card{background:#fff;border:1px solid #dbe8f4;border-radius:18px;padding:30px 24px;max-width:360px;width:100%;box-shadow:0 8px 24px rgba(47,143,223,.14)}
+h2{margin:0 0 8px;font-size:20px}p{margin:6px 0;color:#4a6a86;font-size:15px;line-height:1.4}
+button{margin-top:18px;width:100%;background:#2f8fdf;color:#fff;border:0;border-radius:12px;padding:14px;font-size:16px;font-weight:700}
+</style></head><body><div class="card">
+<h2>No internet connection</h2>
+<p>KRS Portal needs internet. We'll reconnect automatically when you're back online.</p>
+<button onclick="go()">Try again</button></div>
+<script>
+var URL_='https://krs-student-portal.web.app';
+function go(){location.replace(URL_)}
+window.addEventListener('online',go);
+setInterval(function(){ if(navigator.onLine) go(); },5000);
+</script></body></html>
 
